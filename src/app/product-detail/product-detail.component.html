@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="content-wrapper">
+		
+
+
+
+    <div class="tm-container-inner tm-history">
+      <div class="row">
+        <div class="col-12">
+          <div class="tm-history-inner">
+            <div class="column">
+              <img id=featured src="{{products.imageFile}}" class="img-fluid tm-history-img">
+      
+              <div id="slide-wrapper" >
+                  <img id="slideLeft" class="arrow" src="{{products.imageFile}}">
+      
+                  <div id="slider">
+                      <img class="thumbnail active" src="{{products.imageFile}}">
+                      <img class="thumbnail" src="{{products.imageFile}}">
+                      <img class="thumbnail" src="{{products.imageFile}}">
+                   
+                    
+                  </div>
+      
+                 
+              </div>
+             
+          </div>
+           
+            <div class="tm-history-text"> 
+              <h4 class="tm-history-title">{{products.name}}</h4>
+              <p class="tm-mb-p">{{products.description}} Thank you.</p>
+            
+              <br><br>
+              <div class="form-check-inline">
+                <button class="btn btn-success" (click)="plus()"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="form-check-inline">
+                <input type="text" class="form-control" [(ngModel)]="inputnumber">
+                </div>
+                <div class="form-check-inline">
+                <button class="btn btn-danger" (click)="minus()"><i class="fa fa-minus"></i></button>
+                </div> 
+                <br>
+                <br>
+                <br>
+                <button style="margin-right: 10%;" class="btn btn-warning" (click)="handleAddToCart()" > Add Item to Cart</button>
+          </div>
+        
+        
+            
+    
+        </div>
+    
+        
+      </div>
+      
+    </div>

@@ -1,0 +1,121 @@
+<p>add-hotel works!</p>
+<p>display of payment works!</p>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()" >
+        <div class="row">
+          <div class="col-50">
+            <h3>Add Product</h3>
+            <label for="id"><i class="fa fa-user"></i> Id </label>
+            <input
+              type="text"
+              id="id"
+              formControlName="id"
+              name="id"
+              placeholder="13"
+            />
+            <label for="fname"><i class="fa fa-user"></i> Product Name</label>
+            <input
+              type="text"
+              id="name"
+              formControlName="name"
+              name="name"
+              placeholder="Jewellery"
+            />
+            <label for="description"
+              ><i class="fa fa-envelope"></i> Description of the product</label
+            >
+            <input
+              type="text"
+              id="description"
+              formControlName="description"
+              name="description"
+              placeholder="please enter desciption here.."
+            />
+
+            <label for="summary"
+              ><i class="fa fa-address-card-o"></i> Summary Of
+              Product</label
+            >
+            <input
+              type="text"
+              id="summary"
+              formControlName="summary"
+              name="summary"
+              placeholder="Add description here.."
+            />
+          
+
+            <label for="imageFile"
+              ><i class="fa fa-address-card-o"></i> Image Of the product</label
+            >
+            <input
+              type="text"
+              id="imageFile"
+              formControlName="imageFile"
+    
+              placeholder="https://cf.bstatic.com/xdata/images/hotel/max1280x900/295668273.jpg?k-.."
+            />
+           
+
+            <label for="price"
+              ><i class="fa fa-address-card-o"></i> Price Of Product</label
+            >
+            <input
+              type="number"
+              id="price"
+              formControlName="price"
+              name="price"
+              placeholder="$21"
+            />
+
+            <label for="stockNumber" 
+            ><i class="fa fa-address-card-o"></i> Number of stocks left for this Product </label
+          >
+          <input
+            type="number"
+            id="stockNumber"
+            formControlName="stockNumber"
+            placeholder="11"
+          />
+
+
+            <label for="sellerName" 
+            ><i class="fa fa-address-card-o"></i> Seller name Of THE Product </label
+          >
+          <input
+            type="text"
+            id="sellerName"
+            formControlName="sellerName"
+            placeholder="mr tan "
+          />
+          <label for="categoryId"
+            ><i class="fa fa-address-card-o"></i> Category Id of Product</label
+          >
+          <input
+            type="text"
+            id="categoryId"
+            formControlName="categoryId"
+            placeholder="3"
+          />
+
+        
+    
+
+         
+</div>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" /> Shipping
+          address same as billing
+        </label>
+        <input type="submit" value="Add Product" class="btn" />
+      </form>
+</div>
+</div>
+</div>
+
+
+
